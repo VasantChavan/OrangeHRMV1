@@ -31,70 +31,44 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">4</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">54.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">40.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="4">com.visionit.hrmanagement.testCases.Login_DDTC_001</td><td><a href="#m1"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">3</td><td>1618031123752</td><td class="numi">29239</td></tr><tr class="failedodd"><td><a href="#m2"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">3</td><td>1618031123752</td><td class="numi">29239</td></tr><tr class="failedodd"><td><a href="#m3"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">3</td><td>1618031123752</td><td class="numi">29239</td></tr><tr class="failedodd"><td><a href="#m4"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">3</td><td>1618031123752</td><td class="numi">29239</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">com.visionit.hrmanagement.testCases.Login_DDTC_001</td><td><a href="#m5"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">1</td><td>1618031109207</td><td class="numi">4782</td></tr><tr class="passedodd"><td><a href="#m6"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">1</td><td>1618031109207</td><td class="numi">4782</td></tr><tr class="passedodd"><td><a href="#m7"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">1</td><td>1618031109207</td><td class="numi">4782</td></tr><tr class="passedodd"><td><a href="#m8"><b>loginDataDrivenTC_001</b>  </a></td><td class="numi">1</td><td>1618031109207</td><td class="numi">4782</td></tr>
+<tr class="failedodd"><td rowspan="1">com.visionit.hrmanagement.testCases.AddNewUserTC_001</td><td><a href="#m1"><b>addNewUserTest</b>  </a></td><td class="numi">1</td><td>1618119454849</td><td class="numi">28037</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.visionit.hrmanagement.testCases.Login_DDTC_001:loginDataDrivenTC_001</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>Admin$</td>
-<td>admin123</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>TC failed expected  LOGIN Panel in the source page but not found</p>
-junit.framework.Assert.fail(Assert.java:50)
-<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
-<br/>at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
-<br/>at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
+<h2 id="m1">com.visionit.hrmanagement.testCases.AddNewUserTC_001:addNewUserTest</h2>
+<div style="padding-left:3em">
+<p>element not interactable
+  (Session info: chrome=89.0.4389.114)
+Build info: version: &apos;4.0.0-alpha-6&apos;, revision: &apos;5f43a29cfc&apos;
+System info: host: &apos;HP-PCTDFHGJ&apos;, ip: &apos;192.168.0.114&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 404b428a05f1ebeee8b8ca792a2d0340</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:115)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+<br/>at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+<br/>at com.visionit.hrmanagement.pageObjects.AddNewUserPage.setEmpName(AddNewUserPage.java:48)
+<br/>at com.visionit.hrmanagement.testCases.AddNewUserTC_001.addNewUserTest(AddNewUserTC_001.java:32)
 <br/>25 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.visionit.hrmanagement.testCases.Login_DDTC_001:loginDataDrivenTC_001</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>Admin#</td>
-<td>admin$</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>TC failed expected  LOGIN Panel in the source page but not found</p>
-junit.framework.Assert.fail(Assert.java:50)
-<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
-<br/>at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
-<br/>at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
-<br/>25 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.visionit.hrmanagement.testCases.Login_DDTC_001:loginDataDrivenTC_001</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>Admin </td>
-<td>admin123$</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>TC failed expected  LOGIN Panel in the source page but not found</p>
-junit.framework.Assert.fail(Assert.java:50)
-<br/>at junit.framework.Assert.assertTrue(Assert.java:20)
-<br/>at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
-<br/>at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
-<br/>25 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.visionit.hrmanagement.testCases.Login_DDTC_001:loginDataDrivenTC_001</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>Admin</td>
-<td>admin123</td>
-</tr>
-</table>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

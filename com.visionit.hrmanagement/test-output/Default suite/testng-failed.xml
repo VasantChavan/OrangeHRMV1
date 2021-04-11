@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.visionit.hrmanagement.testCases.Login_DDTC_001">
+      <class name="com.visionit.hrmanagement.testCases.AddNewUserTC_001">
         <methods>
           <include name="init"/>
+          <include name="addNewUserTest"/>
           <include name="tearDown"/>
-          <include name="loginDataDrivenTC_001" invocation-numbers="1 2 3"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.visionit.hrmanagement.testCases.Login_DDTC_001 -->
+      </class> <!-- com.visionit.hrmanagement.testCases.AddNewUserTC_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
