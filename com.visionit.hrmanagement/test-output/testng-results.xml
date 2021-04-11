@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54871" started-at="2021-04-10T05:05:00Z" finished-at="2021-04-10T05:05:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54871" started-at="2021-04-10T05:05:00Z" finished-at="2021-04-10T05:05:55Z">
+      <class name="com.visionit.hrmanagement.testCases.Login_DDTC_001">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="init" is-config="true" duration-ms="781" started-at="2021-04-10T10:35:00Z" finished-at="2021-04-10T10:35:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="setUp" is-config="true" duration-ms="8304" started-at="2021-04-10T10:35:00Z" finished-at="2021-04-10T10:35:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDataDrivenTC_001(java.lang.String, java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="loginDataDrivenTC_001" duration-ms="4782" started-at="2021-04-10T10:35:09Z" data-provider="getExcelData" finished-at="2021-04-10T10:35:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDataDrivenTC_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="tearDown" is-config="true" duration-ms="2668" started-at="2021-04-10T10:35:13Z" finished-at="2021-04-10T10:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="setUp" is-config="true" duration-ms="7094" started-at="2021-04-10T10:35:16Z" finished-at="2021-04-10T10:35:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginDataDrivenTC_001(java.lang.String, java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="loginDataDrivenTC_001" duration-ms="1432" started-at="2021-04-10T10:35:23Z" data-provider="getExcelData" finished-at="2021-04-10T10:35:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123$]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[TC failed expected  LOGIN Panel in the source page but not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: TC failed expected  LOGIN Panel in the source page but not found
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
+	at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDataDrivenTC_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="tearDown" is-config="true" duration-ms="2678" started-at="2021-04-10T10:35:25Z" finished-at="2021-04-10T10:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="setUp" is-config="true" duration-ms="11785" started-at="2021-04-10T10:35:27Z" finished-at="2021-04-10T10:35:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginDataDrivenTC_001(java.lang.String, java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="loginDataDrivenTC_001" duration-ms="1068" started-at="2021-04-10T10:35:39Z" data-provider="getExcelData" finished-at="2021-04-10T10:35:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin$]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[TC failed expected  LOGIN Panel in the source page but not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: TC failed expected  LOGIN Panel in the source page but not found
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
+	at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDataDrivenTC_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="tearDown" is-config="true" duration-ms="2643" started-at="2021-04-10T10:35:40Z" finished-at="2021-04-10T10:35:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="setUp" is-config="true" duration-ms="8374" started-at="2021-04-10T10:35:43Z" finished-at="2021-04-10T10:35:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="loginDataDrivenTC_001(java.lang.String, java.lang.String)[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="loginDataDrivenTC_001" duration-ms="1255" started-at="2021-04-10T10:35:51Z" data-provider="getExcelData" finished-at="2021-04-10T10:35:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin#]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin$]]>
+              </value>
+            </param>
+          </params>
+          <exception class="junit.framework.AssertionFailedError">
+            <message>
+              <![CDATA[TC failed expected  LOGIN Panel in the source page but not found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.AssertionFailedError: TC failed expected  LOGIN Panel in the source page but not found
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at com.visionit.hrmanagement.pageObjects.LoginPage.clickOnLoginBtn(LoginPage.java:42)
+	at com.visionit.hrmanagement.testCases.Login_DDTC_001.loginDataDrivenTC_001(Login_DDTC_001.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDataDrivenTC_001 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.visionit.hrmanagement.testCases.Login_DDTC_001@77cd7a0]" name="tearDown" is-config="true" duration-ms="2761" started-at="2021-04-10T10:35:52Z" finished-at="2021-04-10T10:35:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.visionit.hrmanagement.testCases.Login_DDTC_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

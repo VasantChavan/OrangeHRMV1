@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.visionit.hrmanagement.testCases.Login_DDTC_001">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="loginDataDrivenTC_001" invocation-numbers="1 2 3"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.visionit.hrmanagement.testCases.Login_DDTC_001 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
